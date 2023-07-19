@@ -113,7 +113,7 @@ If you encounter an error (ts(7016)) during installation, follow these steps:
 2/. Add the following line to the index.d.ts file:
 
 ```ts
-declare module "react-modalisa";
+declare module "my-modal-test";
 ```
 
-# vite-react-modal
+# my-modal-test
