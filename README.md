@@ -18,16 +18,17 @@ npm i my-modal-test
 
 ### To use the Modal component, you need to import it along with other necessary dependencies:
 
-import folder style.css in your index.html
-
-```html
-<link rel="stylesheet" href="/node_modules/my-modal-test/dist/style.css" />
-```
 
 ```js
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "my-modal-test";
+```
+
+import folder style.css in your index.html
+
+```html
+<link rel="stylesheet" href="/node_modules/my-modal-test/dist/style.css" />
 ```
 
 Next, you can set up the state to control the visibility of the modal:
