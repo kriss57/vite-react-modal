@@ -1,0 +1,72 @@
+{
+  "name": "my-modal-test",
+  "version": "0.1.3",
+  "description": "react-modalisa is a modal component library for React. It is fully customizable and accessible, offering you the freedom and flexibility to create modal experiences for all types of users.",
+  "author": "Antit57",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "modal",
+    "dialog",
+    "accessible",
+    "customizable"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/my-modal-test.umd.js",
+  "module": "./dist/my-modal-test.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-modal-test.es.js",
+      "require": "./dist/my-modal-test.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:css": "copyup 'src/lib/style.css' dist/css",
+    "build": "vite build && npm run build:css",
+    "test": "vitest run",
+    "watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^4.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriss57/vite-react-modal.git"
+  }
+}
